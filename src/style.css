@@ -268,6 +268,113 @@ body {
     left: 19%;
 }
 
+.faq-accordian {
+    width: 100%;
+}
+
+.faq-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+    cursor: pointer;
+}
+
+.faq-visible {
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    padding: 0 1rem;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out;
+}
+
+.faq-visible p {
+    margin: 1rem 0;
+}
+
+.faq-list-container {
+    border-top: 8px solid #222;
+    padding: 2rem 0;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.faq-heading {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 3rem;
+}
+
+.faq-get-started-email {
+    text-align: center;
+}
+
+.faq-get-started-email h3 {
+    margin: 1rem 2rem;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+footer {
+    border-top: 8px solid #222;
+    padding: 2rem 2rem;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-row-1 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-row-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.footer-row-2 p {
+    margin: 1.5rem 0;
+}
+
+.footer-row-3 {
+    padding-top: 2rem;
+}
+
+.footer-row-3 .dropdown-container {
+    border: 1px solid #757575;
+    padding: 0.4rem;
+    border-radius: 4px;
+    color: #757575;
+    width: 125px;
+    text-align: center;
+}
+
+.footer-row-3 .dropdown-container select {
+    color: #757575;
+}
+
+.footer-row-4 {
+    padding-top: 2rem;
+    font-size: 14px;
+}
+
 @media (min-width: 768px) {
     .hero-bg-image-container {
         height: 100vh;
@@ -316,6 +423,29 @@ body {
     .poster-details h6 {
         font-size: 13px;
         font-weight: 500;
+    }
+    .faq-list {
+        padding: 1rem 5rem;
+    }
+    .faq-title {
+        font-size: 20px;
+    }
+    .faq-heading {
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    .faq-get-started-email .email-form-container {
+        width: 75%;
+        transform: translate(15%);
+    }
+    .faq-get-started-email h3 {
+        margin: 1rem 10rem;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .footer-content {
+        width: 75%;
+        transform: translate(25%);
     }
 }
 
@@ -377,6 +507,29 @@ body {
     .feature-2-poster-container {
         max-width: 20em;
         height: 100px;
+    }
+    .faq-list {
+        padding: 1rem 25rem;
+    }
+    .faq-title {
+        font-size: 25px;
+    }
+    .faq-heading {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    .faq-get-started-email .email-form-container {
+        width: 75%;
+        transform: translate(17%);
+    }
+    .faq-get-started-email h3 {
+        /* margin: 1rem 10rem; */
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .footer-content {
+        width: 80%;
+        transform: translate(10%);
     }
 }
 
